@@ -129,6 +129,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0430;
+				TargetAttributes = {
+					4C3697DC15EFB88F007850DB = {
+						DevelopmentTeam = 5625A4W5DL;
+					};
+				};
 			};
 			buildConfigurationList = 4C3697D715EFB88F007850DB /* Build configuration list for PBXProject "Pictowatch" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -205,9 +210,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PROVISIONING_PROFILE = "AEB588E1-2238-4B7B-8DA7-A3D3ECE8A998";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AEB588E1-2238-4B7B-8DA7-A3D3ECE8A998";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "a1ee5d47-6f46-453b-a673-a109b1a9201d";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -226,10 +230,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "AEB588E1-2238-4B7B-8DA7-A3D3ECE8A998";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AEB588E1-2238-4B7B-8DA7-A3D3ECE8A998";
+				PROVISIONING_PROFILE = "a1ee5d47-6f46-453b-a673-a109b1a9201d";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -238,15 +241,14 @@
 		4C3697FC15EFB88F007850DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Anders Host Kjaurgaard (9ZXVP76556)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Anders Host Kjaurgaard (9ZXVP76556)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pictowatch/Pictowatch-Prefix.pch";
 				INFOPLIST_FILE = "Pictowatch/Pictowatch-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9BE0D138-0B82-4D90-A6C9-4718CDD06524";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9BE0D138-0B82-4D90-A6C9-4718CDD06524";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -255,19 +257,56 @@
 		4C3697FD15EFB88F007850DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Anders Host Kjaurgaard (9ZXVP76556)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Anders Host Kjaurgaard (9ZXVP76556)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pictowatch/Pictowatch-Prefix.pch";
 				INFOPLIST_FILE = "Pictowatch/Pictowatch-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9BE0D138-0B82-4D90-A6C9-4718CDD06524";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9BE0D138-0B82-4D90-A6C9-4718CDD06524";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
+		};
+		4CAAE07119F04304001B712A /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Anders Host Kjaurgaard (9ZXVP76556)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Anders Host Kjaurgaard (9ZXVP76556)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "a1ee5d47-6f46-453b-a673-a109b1a9201d";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Ad Hoc";
+		};
+		4CAAE07219F04304001B712A /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pictowatch/Pictowatch-Prefix.pch";
+				INFOPLIST_FILE = "Pictowatch/Pictowatch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Ad Hoc";
 		};
 /* End XCBuildConfiguration section */
 
@@ -277,6 +316,7 @@
 			buildConfigurations = (
 				4C3697F915EFB88F007850DB /* Debug */,
 				4C3697FA15EFB88F007850DB /* Release */,
+				4CAAE07119F04304001B712A /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -286,6 +326,7 @@
 			buildConfigurations = (
 				4C3697FC15EFB88F007850DB /* Debug */,
 				4C3697FD15EFB88F007850DB /* Release */,
+				4CAAE07219F04304001B712A /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -39,12 +39,12 @@
     [self.clockView setNeedsDisplay];
     backgroundColor = [UIColor blackColor];
     UITapGestureRecognizer *tgr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
-    [tgr setNumberOfTapsRequired:2];
+//    [tgr setNumberOfTapsRequired:2];
     [self.view addGestureRecognizer:tgr];
     
-    UITapGestureRecognizer *tgr1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap1:)];
-    tgr1.delegate = self;
-    [self.view addGestureRecognizer:tgr1];
+//    UITapGestureRecognizer *tgr1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap1:)];
+//    tgr1.delegate = self;
+//    [self.view addGestureRecognizer:tgr1];
 }
 
 -(UIColor *)backgroundColor{
@@ -70,13 +70,13 @@
     }
 }
 
--(void)tap1:(id)sender{
-    if(self.palette.frame.origin.y == 380){
-        [UIView animateWithDuration:0.25 animations:^(){
-            self.palette.frame = CGRectMake(0, 480, self.palette.frame.size.width, 100);
-        }];
-    }
-}
+//-(void)tap1:(id)sender{
+//    if(self.palette.frame.origin.y == 380){
+//        [UIView animateWithDuration:0.25 animations:^(){
+//            self.palette.frame = CGRectMake(0, 480, self.palette.frame.size.width, 100);
+//        }];
+//    }
+//}
 
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
